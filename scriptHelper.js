@@ -1,6 +1,7 @@
 // Write your helper functions here!
 require('isomorphic-fetch');
 
+
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
    // Here is the HTML formatting for our mission target div.
    /*
@@ -16,25 +17,40 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    */
 }
 
-function validateInput(testInput) {
-   
+
+/*
+
+ let validateInput=function(testInput) {
+    if (testInput === ""){
+        return "Empty";
+    } else if (isNaN(testInput)===true) {
+        return "Not a Number";
+    } else if (isNaN(testInput)===false){
+        return "Is a Number";
+    }
 }
 
+
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-   
+    let form = document.querySelector("form");
+
+
+
+
 }
+
 
 async function myFetch() {
     let planetsReturned;
-
-    planetsReturned = await fetch().then( function(response) {
-        });
-
+    planetsReturned =fetch("https://handlers.education.launchcode.org/static/planets.json")
     return planetsReturned;
 }
 
 function pickPlanet(planets) {
 }
+
+
+*/
 
 module.exports.addDestinationInfo = addDestinationInfo;
 module.exports.validateInput = validateInput;
